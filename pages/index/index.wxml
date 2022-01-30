@@ -1,0 +1,5 @@
+<view class="yg_index">
+<!-- 搜索框 开始 -->
+<searchinput></searchinput>
+<!-- 搜索框 结束 -->
+</view>
