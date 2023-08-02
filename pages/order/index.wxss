@@ -1,4 +1,19 @@
-view{
-  /* 使用主题颜色 */
-  color:var(--themeColor);
+.order_main .order_item {
+  padding: 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.order_main .order_item .order_no_row {
+  display: flex;
+  padding: 10rpx;
+  justify-content: space-between;
+}
+.order_main .order_item .order_price_row {
+  display: flex;
+  padding: 10rpx;
+  justify-content: space-between;
+}
+.order_main .order_item .order_time_row {
+  display: flex;
+  padding: 10rpx;
+  justify-content: space-between;
 }

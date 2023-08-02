@@ -1,0 +1,4 @@
+{
+    "editor.suggest.shareSuggestSelections": true,
+    "editor.suggestSelection": "recentlyUsedByPrefix"
+}

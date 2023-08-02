@@ -1,2 +1,12 @@
-<!--pages/login/index.wxml-->
-<text>pages/login/index.wxml</text>
+
+
+<view>
+  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+    <image class="avatar" src="{{avatarUrl}}"></image>
+  </button> 
+    <view class="name" >
+      <!-- <text>昵称：</text> -->
+      <input type="nickname" class="weui-input" placeholder="请输入昵称" bindblur="choosename" />
+    </view>
+    <button type="primary" class="login"  bindtap="Login" > 登录 </button>
+</view>

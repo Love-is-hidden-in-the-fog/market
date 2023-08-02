@@ -1,66 +1,36 @@
 // pages/login/index.js
+const defaultAvatarUrl = 'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0'
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    avatarUrl: defaultAvatarUrl,
+    username:""
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onChooseAvatar(e) {
+    const { avatarUrl } = e.detail 
+    console.log(e.detail)
+    this.setData({
+      avatarUrl,
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  choosename(e){
+    this.setData({
+      username:e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  Login(){
+    console.log(this.data.avatarUrl==defaultAvatarUrl,this.data.username)
+    if(this.data.avatarUrl!==defaultAvatarUrl&&this.data.username){
+        wx.setStorageSync('userinfo', {
+          avatarUrl:this.data.avatarUrl,
+          nickName:this.data.username
+        })
+        wx.navigateBack({
+          delta: 1
+        })
+    }else{
+      wx.showToast({
+        title: '请填写完整信息',
+      })
+    }
   }
 })

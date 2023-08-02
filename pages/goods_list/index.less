@@ -1,0 +1,43 @@
+.first_tab{    
+    display: flex;  
+    flex-direction: row;   
+    flex-wrap: wrap;
+    background-color: #ffd68f;
+        .goods_item{
+            display: flex;     
+            flex-wrap: wrap;
+            padding: 20rpx;
+            border-top:  10rpx solid #fff;
+            border-bottom: 10rpx solid #fff;
+            border-left:  10rpx solid #fff;;
+            width: 50%;
+             .goods_img_wrap{  
+                 padding-left: 0rpx;
+                 align-content: center;
+                 justify-content: center;
+                 width: 100%;
+                 image{
+                     width:100%;
+                 }
+             } 
+             .goods_info_wrap{   
+                 align-content: center;       
+                 justify-content: flex-start;
+                 .goods_name{
+                     display: -webkit-box;
+                     word-break: break-all;
+                     text-overflow: ellipsis;
+                     overflow: hidden;
+                     -webkit-box-orient: vertical;
+                     -webkit-line-clamp:1;/*设置 需要显示的行数*/
+     
+                 }
+                 .goods_price{
+                    padding-left: 0rpx;
+                  
+                 } 
+             }
+         }
+    
+
+}  

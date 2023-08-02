@@ -11,12 +11,16 @@ page,view,text,swiper,swiper-item,image,navigator{
 */
 page{
   /* 定义主题颜色 */ 
-  --themeColor:rgb(0,148,255);
+  --themeColor:#0d80ec;
   /* 
   定义统一字体大小 假设设计稿 大小是 375px
   1px=2rpx
  */
     font-size: 35rpx;
+ 
 
 
+}
+image{
+  width: 100%;
 }

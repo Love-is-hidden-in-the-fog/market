@@ -14,9 +14,12 @@
     "pages/auth/index",
     "pages/pay/index"
   ],
+  "requiredPrivateInfos":[
+    "chooseAddress"
+  ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarBackgroundColor": "#0d80ec",
     "navigationBarTitleText": "Market",
     "navigationBarTextStyle":"white"
   },
@@ -35,7 +38,7 @@
     }, 
       {
       "pagePath": "pages/category/index",
-      "text": "分类",
+      "text": "商城",
       "iconPath": "icons/Category.png",
       "selectedIconPath": "icons/Category_1.png" 
     },
@@ -56,3 +59,4 @@
 
   "sitemapLocation": "sitemap.json"
 }
+ 

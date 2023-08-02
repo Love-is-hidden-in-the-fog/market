@@ -1,6 +1,11 @@
 // components/searchinput/search input.js
 Component({
+
+  options: {
+    styleIsolation: 'isolated'
+  },
   /**
+   * 
    * 组件的属性列表
    */
   properties: {
